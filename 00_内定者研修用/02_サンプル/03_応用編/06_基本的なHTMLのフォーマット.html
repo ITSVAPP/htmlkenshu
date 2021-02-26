@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/06.css" />
+		<title>
+			サンプル - CSS2｜HTML5の新要素で組む：ほんっとにはじめてのHTML5とCSS3
+		</title>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="#">Site Title</a>
+			</h1>
+			<nav>
+				<h2>グローバルナビゲーション</h2>
+				<ul>
+					<li>
+						<a href="#">CONCEPT</a>
+					</li>
+					<li>
+						<a href="#">SERVICE</a>
+					</li>
+					<li>
+						<a href="#">HISTORY</a>
+					</li>
+					<li>
+						<a href="#">ABOUT US</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="eyeCatcher">
+				<h2>Sectioning Content Elements</h2>
+				<p>
+					<a href="#sec1-1">&lt;article&gt;</a>
+					<a href="#sec1-2">&lt;aside&gt;</a>
+					<a href="#sec1-3">&lt;section&gt;</a>
+					<a href="#sec1-4">&lt;nav&gt;</a>
+				</p>
+			</div>
+			<!--END #eyeCatcher-->
+			<div id="container">
+				<article>
+					<section>
+						<h2 id="sec1">セクショニング・コンテント要素</h2>
+						<p>
+							&lt;article&gt;、&lt;aside&gt;、&lt;section&gt;、&lt;nav&gt;要素は「セクショニング・コンテント要素」と呼ばれる。セクショニング・コンテント要素は、それぞれ潜在的に「見出し」と「アウトライン」を持つ。
+						</p>
+						<h3 id="sec1-1">article</h3>
+						<p>
+							&lt;article&gt;は、サイト内の完結した構成を表す。単独で再配布・再利用できるもの。
+							<br />例えば、メインの記事、フォーラムの投稿、ブログのエントリ、ユーザーが投稿したコメントなど。
+						</p>
+						<h3 id="sec1-2">aside</h3>
+						<p>
+							&lt;aside&gt;は、ページ内の
+							メインではないが軽く触れておきたいコンテンツから構成されるセクションを表す。
+							<br />例えば、補足記事、広告、コラム、ページ内ナビなど。
+						</p>
+						<h3 id="sec1-3">section</h3>
+						<p>
+							&lt;section&gt;は、書籍で言う「章・節・項」といった構成を表す。通常は見出し（&lt;h1&gt;
+							〜 &lt;h6&gt;要素）を入れることによってそのレベルを表す。
+						</p>
+						<h3 id="sec1-4">nav</h3>
+						<p>&lt;nav&gt;は、ナビゲーションのセクションを表す。</p>
+					</section>
+					<section>
+						<h2 id="sec2">セクションと見出し</h2>
+						<p>
+							文章を制作するとき、章・節・項といったレベル（階層）がある。HTMLでは、セクショニング・コンテント要素を使用して明示的に章・節・項といった固まりを示す事ができる。
+							<br />そのレベル（階層）は、&lt;h1&gt;〜&lt;h6&gt;
+							の見出し要素で示す。セクションと見出しは密接に関わっている。
+						</p>
+						<h3 id="sec2-1">見出しのレベルで暗示的にセクションができる</h3>
+						<p>
+							セクション内にある最初の見出しのレベルで、そのセクションのレベルが決定される。ただし、その後に別の見出しがある場合は、特にセクションを示す要素が無くても、暗黙のセクションが作られる。
+							<br />後に続く見出しが前の見出しのレベル以上であれば、そこで前のセクションは終了し、新しい暗黙のセクションが開始される。
+							<br />後に続く見出しのレベルが小さければ、元のセクションに含まれる暗黙のサブセクションとして認識される。
+						</p>
+						<h3 id="sec2-2">セクション要素と見出しで明示的に</h3>
+						<p>
+							見出しによって暗示的なセクションが認識されるが、セクションである範囲には明示的にセクション要素を設置し「セクションのレベルにあった適切な見出し」をつけることが推奨されている。
+						</p>
+					</section>
+				</article>
+				<aside>
+					<nav>
+						<h3>ページ内リンク</h3>
+						<ul>
+							<li>
+								<a href="#sec1">セクショニング・コンテント要素</a>
+								<ul>
+									<li>
+										<a href="#sec1-1">article</a>
+									</li>
+									<li>
+										<a href="#sec1-2">aside</a>
+									</li>
+									<li>
+										<a href="#sec1-3">section</a>
+									</li>
+									<li>
+										<a href="#sec1-4">nav</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#sec2">セクションと見出し</a>
+								<ul>
+									<li>
+										<a href="#sec2-1"
+											>見出しのレベルで暗示的にセクションができる</a
+										>
+									</li>
+									<li>
+										<a href="#sec2-2">セクション要素と見出しで明示的に</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+			</div>
+			<!--END #container-->
+		</main>
+		<footer>
+			Copyright ©
+			<a href="http://honttoni.blog74.fc2.com/"
+				>ほんっとにはじめてのHTML5とCSS3</a
+			>All Rights Reserved.
+			<address>
+				by :
+				<a href="http://honttoni.blog74.fc2.com/blog-entry-67.html"
+					>yuki★hata</a
+				>
+			</address>
+		</footer>
+	</body>
+</html>

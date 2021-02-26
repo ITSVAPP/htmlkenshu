@@ -1,0 +1,41 @@
+@charset "utf-8";
+body {
+	background-image: url("../img/position.jpg");
+}
+header,
+nav,
+section,
+footer {
+	border: 1px solid #999999;
+	border-radius: 8px;
+	padding: 10px 10px 10px 10px;
+	background: #ffffff;
+}
+#site {
+	margin: 20px auto;
+	width: 800px;
+	height: 600px;
+}
+header {
+	margin: 0px 0px 0px 0px;
+	height: 80px;
+	width: 778px;
+}
+nav {
+	margin: 10px 0px 10px 0px;
+	float: left;
+	height: 380px;
+	width: 120px;
+}
+section {
+	margin: 10px 0px 10px 0px;
+	float: right;
+	height: 380px;
+	width: 624px;
+}
+footer {
+	margin: 0px 0px 0px 0px;
+	clear: both;
+	height: 54px;
+	width: 778px;
+}

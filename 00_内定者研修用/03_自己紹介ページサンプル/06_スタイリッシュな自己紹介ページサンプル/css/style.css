@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap");
+
+.name {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 34px;
+	border-bottom: double; /*二重線を引く*/
+	border-color: #ffffff;
+	border-width: 4px;
+	color: darkslategrey;
+}
+
+.maincontents {
+	display: flex;
+	width: 80%;
+	margin: 2% 10% 0 10%;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+	height: 90vh;
+}
+
+.left-contents {
+	width: 50%;
+	background-image: url(https://illust.download/wp-content/uploads/2017/11/background137.jpg);
+}
+
+.right-contents {
+	width: 50%;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/slider1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.square {
+	width: 75%;
+	margin: 30px 0px 30px 80px;
+	padding: 0px 10px 3px 20px;
+	transform: skewX(-15deg);
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.content {
+	margin: 0;
+	padding: 0;
+	transform: skewX(15deg);
+}
+
+.title {
+	font-size: 20px;
+	color: #ffffff;
+	padding-left: 10px;
+	background-color: #a8b3d0;
+	margin: 0 0 0 10px;
+}
+
+.subtitle {
+	font-size: 12px;
+	color: #ffffff;
+	font-family: "Grandstander", cursive;
+}
+
+.description {
+	margin-left: 20px;
+	margin-top: 5px;
+	color: darkslategrey;
+}

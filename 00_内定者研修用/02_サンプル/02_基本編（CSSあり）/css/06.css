@@ -1,0 +1,11 @@
+/* 参考サイト：https://allabout.co.jp/gm/gc/23836/ */
+/* タグに対して指定する */
+.contant_a {
+	float: left;
+	width: 80%;
+	background-color: #ffdab9;
+}
+
+.contant_b {
+	background-color: #afeeee;
+}

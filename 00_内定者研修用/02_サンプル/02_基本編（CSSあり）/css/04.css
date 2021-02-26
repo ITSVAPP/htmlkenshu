@@ -1,0 +1,20 @@
+/* 参考サイト：http://www.htmq.com/style/ */
+/* タグに対して指定する */
+#back {
+	background-image: url("../img/背景画像_かっこいい.png"); /*背景画像の指定*/
+	background-size: cover; /*背景画像を引き伸ばす*/
+}
+
+#hello {
+	border-bottom: 2px solid #ff3333;
+}
+
+#normal {
+	background-color: #ffff66;
+	color: #ff3333;
+	border-bottom: 2px solid #ff3333;
+}
+
+#bunbun {
+	background: linear-gradient(transparent 60%, #ffff66 60%);
+}

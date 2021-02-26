@@ -1,0 +1,12 @@
+/* 参考サイト：http://www.htmq.com/style/ */
+/* タグに対して指定する */
+.font1 {
+	font-size: 19px;
+	font-family: "serif";
+	color: #ff0000;
+}
+
+.border {
+	background: #f0f7ff; /*背景色*/
+	border: dashed 2px #5b8bd0; /*点線の　幅2px 色青*/
+}

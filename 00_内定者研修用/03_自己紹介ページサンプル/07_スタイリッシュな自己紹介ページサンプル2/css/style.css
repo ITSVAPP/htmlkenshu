@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
+
+html,
+body {
+	color: #1a1a1a;
+	background-color: #efeff0;
+}
+
+.main {
+	text-align: center;
+	font-family: "Krona One", sans-serif;
+	height: 300px;
+}
+.name {
+	font-size: 2em;
+}
+
+.intoro {
+	color: #565555;
+}
+
+.strong {
+	font-weight: bold; /* 太字*/
+	font-size: 150%; /* 文字を大きくする */
+	border-bottom: 2px solid #d8d6d6; /* 下線*/
+	transition: all 0.1s;
+}
+
+.strong:hover {
+	border-bottom: 3px solid #565555; /* 下線*/
+	transition: all 0.2s;
+}
+
+.maincontents {
+	display: flex;
+	flex-wrap: wrap; /*折り返す*/
+}
+
+.content {
+	position: relative;
+	width: 33%;
+	padding: 0;
+}
+
+/*　トリミングする外側の枠　*/
+.trim {
+	overflow: hidden;
+	width: 100%; /* トリミングしたい枠の幅 */
+	height: 400px; /* トリミングしたい枠の高さ */
+	position: relative;
+}
+
+/* 横幅に合わせてリサイズ、はみ出た分をトリミング */
+.content-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: auto;
+	filter: grayscale(100%);
+	transition: all 0.1s;
+}
+
+.content-view {
+	padding: 1% 5%;
+	width: 80%;
+	height: 80%;
+	top: 0px;
+	margin: 5% 5%;
+	position: absolute;
+	z-index: 1;
+	visibility: hidden;
+	background-color: rgba(239, 239, 240, 0);
+	transition: all 0.1s;
+}
+
+.title {
+	font-family: "Krona One", sans-serif;
+	text-align: center;
+}
+
+.description {
+	color: #565555;
+	font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.content:hover .content-img {
+	filter: grayscale(0%);
+	transition: all 0.2s;
+}
+
+.content:hover .content-view {
+	visibility: visible;
+	background-color: rgba(239, 239, 240, 1);
+	transition: all 0.4s;
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+}

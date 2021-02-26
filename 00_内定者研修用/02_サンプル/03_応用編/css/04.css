@@ -1,0 +1,21 @@
+.action1 {
+	border: 1px solid #ddd;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto; /*マージン（余白）なし 真ん中寄せ*/
+	overflow: hidden; /*領域からはみ出たら消す*/
+}
+.action1 img {
+	width: 100%;
+}
+
+/*ホバー時に画像（img）を出す*/
+.action1:hover {
+	background-image: url(../img/ayu_after.png);
+	background-size: cover;
+}
+
+/*ホバー時に画像（img）を消す*/
+.action1:hover img {
+	display: none;
+}

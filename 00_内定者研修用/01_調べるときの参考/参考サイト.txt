@@ -1,0 +1,38 @@
+◆フリーのイラストを使用したい
+https://www.irasutoya.com/
+
+・使い方（ダウンロードする場合）
+　①画像を選択
+　②右クリック
+　③名前をつけて画像を保存
+
+・リンクを取得する場合
+　①画像を右クリック
+
+　②画像のアドレスをコピー
+
+◆センスのある色の選び方
+・参考サイト
+http://hue360.herokuapp.com/
+
+・使い方
+https://www.internetacademy.jp/it/design/web-design/well-balanced-color-hue360.html
+
+◆文字を中央に配置したいけどわからない
+http://www-creators.com/archives/391
+
+◆文字のフォントを変更したい
+https://saruwakakun.com/html-css/basic/text-setting
+
+◆マウスを画像の上に持ってきたとき、動きをつけたい。
+https://cotodama.co/css_mouseover_img/
+
+◆HTMLの属性（タグに着けるオプション）を調べたい
+https://developer.mozilla.org/ja/docs/Web/HTML/Attributes
+
+◆CSSリファレンス
+http://www.htmq.com/style/
+
+◆HMTLをきれいに書きたい
+http://u670.com/pikamap/htmlseikei.php
+　⇒HTMLを張り付けて「整形」ボタンを押下

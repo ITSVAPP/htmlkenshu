@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #666; /*全体の文字色*/
+	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro",
+		"ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka,
+		"ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
+	font-size: 15px; /*文字サイズ*/
+	line-height: 2; /*行間*/
+	background: #fff url(../images/bg.jpg) repeat center center/150px; /*背景色*/
+}
+
+.namecontents {
+	margin-left: 20%; /*左からの距離*/
+}
+
+.name {
+	font-family: "メイリオ", "meiryo"; /*フォント*/
+	font-size: 42px; /*文字サイズ*/
+	font-weight: 900; /*文字の太さ*/
+	margin-bottom: 0px; /*下からの距離*/
+}
+
+.status {
+	margin-top: -10px; /*上えからの距離*/
+	font-weight: 600; /*文字の太さ*/
+	font-family: "メイリオ", "meiryo"; /*フォント*/
+}
+
+.maincontents {
+	margin-top: 55px; /*上からの距離*/
+	margin-left: 15%; /*左からの距離*/
+}
+.image {
+	border-radius: 50%; /* 角丸半径を50%にする(=円形にする) */
+	width: 400px; /* ※縦横を同値に */
+	height: 400px; /* ※縦横を同値に */
+	background: #fff url(../images/bg2.jpg);
+}
+
+.main {
+	display: inline-block; /* インラインブロック要素にする */
+	margin-left: 5%; /*左からの距離*/
+}
+
+.hello h1 {
+	margin-top: -100px; /*上からの距離*/
+	font-family: "ms pmincho"; /*フォント*/
+	font-size: 90px; /*文字サイズ*/
+}
+.hello h2 {
+	margin-top: -100px; /*上からの距離*/
+	font-family: "ms pmincho"; /*フォント*/
+	font-size: 45px; /*文字サイズ*/
+}
+
+.link {
+	display: inline-block; /* インラインブロック要素にする */
+	border-radius: 50%; /* 角丸半径を50%にする(=円形にする) */
+	width: 200px; /* ※縦横を同値に */
+	height: 200px; /* ※縦横を同値に */
+	position: relative;
+	background: #fff;
+	transition: background-color 0.5s;
+}
+.link:hover {
+	background-color: #333646;
+}
+
+.color1 {
+	background-color: #45a1cf;
+}
+
+.color1border {
+	background: linear-gradient(transparent 90%, #45a1cf 90%);
+}
+
+.color2 {
+	background-color: #f3c759;
+}
+
+.color2border {
+	background: linear-gradient(transparent 90%, #f3c759 90%);
+}
+.color3 {
+	background-color: #c0d860;
+}
+.color3border {
+	background: linear-gradient(transparent 90%, #c0d860 90%);
+}
+
+/* ※リンクのプロパティ */
+.link a {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 200px; /* ※上と同値に */
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+	font-family: "ms pmincho"; /*フォント*/
+	font-size: 35px; /*文字サイズ*/
+	color: #fff; /*文字色*/
+	text-decoration: none; /*アンダーバー削除*/
+}
+
+/* 
+サブコンテンツ
+--------------------------------------------------------- */
+.subcontents {
+	width: 70%;
+	margin-top: 10%; /*上からの距離*/
+	margin-left: 15%; /*左からの距離*/
+}
+
+.subcontents > p {
+	font-family: "ms pmincho"; /*フォント*/
+	font-size: 62px; /*文字サイズ*/
+}
+
+.subcontents > p::after {
+	position: absolute;
+	content: " ";
+	display: block;
+	border-bottom: solid 3px #333646;
+	width: 70%;
+}
+
+.subcontents img {
+	width: 300px; /* ※縦横を同値に */
+	height: 300px; /* ※縦横を同値に */
+}
+.subcontents div {
+	display: inline-block; /* インラインブロック要素にする */
+	vertical-align: top; /* 上に合わせる */
+	margin-top: 0; /*上からの距離*/
+	margin-left: 10%; /*上からの距離*/
+}
+
+dl {
+	margin-top: 0; /*上からの距離*/
+	font-size: 24px; /*文字サイズ*/
+}
+
+dt {
+	font-weight: 900; /*文字の太さ*/
+}
