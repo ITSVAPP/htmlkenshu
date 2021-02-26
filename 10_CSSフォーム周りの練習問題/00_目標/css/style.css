@@ -1,0 +1,104 @@
+/* 中央寄せ */
+.container {
+	border: 1px #ddd solid; /* ボーダーをつける*/
+	border-radius: 4px; /* 角を少し丸くする*/
+	padding: 5px 20px 20px 20px; /* 上 右 下 左 */
+	width: 350px; /* 横幅 */
+	margin: auto; /* 自動で左右にマージンをとる */
+}
+
+/* 見出し */
+h1 {
+	font-weight: 400;
+	color: #111;
+	line-height: 10px;
+}
+
+form div {
+	position: relative;
+	height: 80px;
+}
+
+/* 必須か任意のラベル */
+label {
+	padding-bottom: 2px;
+	font-weight: 700; /* 文字を太く */
+	color: #111;
+}
+
+/* INPUT各種フォーム */
+input {
+	border: 1px #ddd solid; /* ボーダーをつける*/
+	display: block; /* 改行させる */
+	width: calc(
+		100% - 10px
+	); /* 横幅 からボーダー(2px × 2)とpadding分引いている */
+	height: 34px;
+	margin: 0;
+	padding: 0 0 0 6px; /* 上 右 下 左 */
+	margin-bottom: 2em;
+}
+
+/* INPUTチェックOK時の背景 */
+input:valid {
+	background: transparent;
+}
+
+/* INPUTチェックNG時の背景 */
+input:invalid {
+	border: 1px #df1529 solid; /* ボーダーをつける*/
+	background: #ffcdd2;
+}
+
+/* INPUTフォーカス時の色 */
+input:focus {
+	outline: none; /* フォーカス時の黒枠を削除 */
+	background: #dcedc8;
+	border: 2px #e77600 solid; /* ボーダーをつける*/
+	box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+}
+
+/* INPUTOKの時に表示させるもの*/
+.spn-ok {
+	visibility: hidden; /* 非表示 */
+	position: absolute;
+	top: 0; /* 上に表示 */
+	right: 0; /* 右に表示 */
+
+	/* 以下文字の装飾 */
+	background-color: #27ae60;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 80%;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+	border-radius: 50%;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* INPUTOK時に表示する */
+input:valid + .spn-ok {
+	visibility: visible;
+}
+
+/* ボタンのcss */
+button {
+	border: 2px #ddd solid; /* ボーダーをつける*/
+	text-align: center;
+	width: 100%;
+	height: 34px;
+	cursor: pointer;
+	background: #f0c14b;
+	outline: none; /* 黒枠を削除 */
+	transition: all 0.3s;
+}
+
+button:active {
+	background: #e77600;
+}
+
+/* フォーム全体のチェックがエラーだった時のcss */
+form:invalid button {
+	pointer-events: none; /* 非活性 */
+	background: #ddd;
+	transition: all 0.3s;
+}

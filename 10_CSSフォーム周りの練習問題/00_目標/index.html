@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>最終成果物</title>
+	</head>
+	<body>
+		<div class="container">
+			<form action="https://www.google.com/" method="get">
+				<h1>アカウントを作成</h1>
+				<div>
+					<label>名前</label>
+					<input
+						type="text"
+						name="name"
+						placeholder="例：ジャングル オーシャン"
+						autofocus
+						required
+					/>
+					<span class="spn-ok">OK</span>
+				</div>
+				<div>
+					<label>メールアドレス</label>
+					<input
+						type="email"
+						name="email"
+						placeholder="例：raffaello@jungleocean.com"
+						required
+					/>
+					<span class="spn-ok">OK</span>
+				</div>
+				<div>
+					<label>パスワード</label>
+					<input
+						type="password"
+						name="password"
+						placeholder="最低6文字が必要です"
+						required
+						pattern=".{6,}"
+					/>
+					<span class="spn-ok">OK</span>
+				</div>
+				<div>
+					<label>もう一度パスワードを入力してください</label>
+					<input
+						type="password"
+						name="repassword"
+						placeholder="最低6文字が必要です"
+						required
+						pattern=".{6,}"
+					/>
+					<span class="spn-ok">OK</span>
+				</div>
+				<button type="submit">アカウントを作成する</button>
+			</form>
+		</div>
+	</body>
+</html>

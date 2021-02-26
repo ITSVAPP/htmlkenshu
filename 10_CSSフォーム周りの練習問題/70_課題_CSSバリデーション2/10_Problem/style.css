@@ -1,0 +1,14 @@
+/* ボタンのcss */
+button {
+	border: 2px #ddd solid; /* ボーダーをつける*/
+	text-align: center;
+	cursor: pointer;
+	background: #f0c14b;
+	outline: none; /* 黒枠を削除 */
+}
+
+/* TODO */
+/* フォーム全体のチェックがエラーだった時
+　　ボタンを押せなくする（pointer-eventsの設定）
+	backgroundを白にする
+ */
