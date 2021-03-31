@@ -31,8 +31,4 @@ https://cotodama.co/css_mouseover_img/
 https://developer.mozilla.org/ja/docs/Web/HTML/Attributes
 
 ◆CSSリファレンス
-http://www.htmq.com/style/
-
-◆HMTLをきれいに書きたい
-http://u670.com/pikamap/htmlseikei.php
-　⇒HTMLを張り付けて「整形」ボタンを押下
+https://developer.mozilla.org/ja/docs/Web/Reference
