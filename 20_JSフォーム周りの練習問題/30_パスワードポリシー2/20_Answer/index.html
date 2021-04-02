@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>パスワード変更</title>
+	</head>
+	<body>
+		<div class="container">
+			<form action="https://www.google.com/" method="get">
+				<h1>パスワード変更</h1>
+				<p>
+					新しいパスワードを入力してください。少なくとも以下の条件を見たしてください。
+				</p>
+				<ul>
+					<li id="mojisize-polisy">8文字以上</li>
+					<li id="alphabet-polisy">大文字英字を含む</li>
+				</ul>
+				<div>
+					<label>新しいパスワード</label>
+					<input
+						type="password"
+						name="password"
+						placeholder="新しいパスワード"
+					/>
+				</div>
+				<button type="submit" id="change-btn" disabled>パスワード変更</button>
+			</form>
+		</div>
+		<script src="js/common.js"></script>
+	</body>
+</html>
