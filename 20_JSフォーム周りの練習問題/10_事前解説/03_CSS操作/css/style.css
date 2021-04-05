@@ -1,0 +1,11 @@
+img {
+	transition: all 0.3s; /* すべてのstyleの変更を0.3秒掛ける */
+}
+
+.turn-side {
+	transform: scale(-1, 1); /* 左右に反転 */
+}
+
+.turn-vertical {
+	transform: scale(1, -1); /* 上下に反転 */
+}

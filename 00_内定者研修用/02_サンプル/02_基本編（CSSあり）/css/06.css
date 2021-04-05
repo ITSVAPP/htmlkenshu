@@ -1,12 +1,17 @@
-/* 参考サイト：https://allabout.co.jp/gm/gc/23836/ */
+/* 参考サイト：https://qiita.com/katsunory/items/99a417f4e1a763477a09 */
 /* クラスに対して指定する */
 
-.contant_a {
-	float: left;
-	width: 80%;
-	background-color: #ffdab9;
+.flexbox {
+	display: flex;
+	height: 200px;
 }
 
-.contant_b {
-	background-color: #afeeee;
+.contentA {
+	width: 40%;
+	background-color: aquamarine;
+}
+
+.contentB {
+	width: 60%;
+	background-color: blueviolet;
 }
