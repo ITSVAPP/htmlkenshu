@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  color: #3e3d3d;
+  font-family: Helvetica, Arial, Doroid Sans, "メイリオ", Meiryo,
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+main {
+  margin: 0 20%;
+
+  > div {
+    margin: 0 auto;
+    padding: 5% 10%;
+    width: 400px;
+
+    box-shadow: 0px 0px 15px -5px #777777;
+    border-radius: 10px;
+  }
+}
+h1 {
+  background-color: rgb(245, 228, 207);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+div.box {
+  .box-search {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    > input {
+      width: 100px;
+      height: 30px;
+      padding: 0 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  }
+
+  .box-result {
+    .result-img {
+      display: flex;
+      justify-content: center;
+      > img {
+        width: 150px;
+      }
+    }
+    .result-name {
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0px 0px 15px -5px #777777;
+      border-radius: 10px;
+      > p {
+        margin: 0;
+      }
+      > #name {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+
+    .result-detail {
+      padding: 20px;
+      > dl {
+        display: flex;
+        justify-content: left;
+        line-height: 1.5rem;
+        > dt {
+          width: 20%;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+        > dd {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 2px 10px;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+  border-radius: 100vh;
+  color: #a3a3a3;
+  border: 1px solid #999;
+  text-shadow: 0 1px #fff;
+  box-shadow: 0 3px 2px 1px #fcfcfc, 0 4px 6px #cecfd1, 0 -2px 2px #cecfd1,
+    0 -4px 2px #eee, inset 0 0 2px 2px #cecfd1;
+  transition: 0.2s;
+
+  &:hover {
+    color: #6b6565;
+  }
+  &:active {
+    background-image: linear-gradient(
+      to top,
+      #ffffff 0%,
+      #fff 80%,
+      #313131 100%
+    );
+  }
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  margin: 10px auto -50px auto;
+  border: 4px #ddd solid;
+  border-top: 4px #2e93e6 solid;
+  border-radius: 50%;
+  animation: sp-anime 1s infinite linear;
+}
+
+@keyframes sp-anime {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.err-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgb(247, 32, 32);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}

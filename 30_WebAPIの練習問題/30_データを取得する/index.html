@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>WebAPIの練習問題</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>ポケモンけんさく</h1>
+        <div class="box">
+          <div class="box-search">
+            <input type="text" placeholder="ずかんNo" id="input-text" />
+            <button id="btn">さがす</button>
+          </div>
+
+          <!-- 以下検索結果 -->
+          <div class="box-result">
+            <div class="result-img">
+              <img id="front_default" alt="デフォルト" />
+              <img id="back_default" alt="後ろ姿" />
+            </div>
+            <div class="result-name">
+              <p class="no">No.<span id="no">(no)</span></p>
+              <p id="name"></p>
+            </div>
+            <div class="result-detail">
+              <dl>
+                <dt>タイプ</dt>
+                <dd id="type">(type)</dd>
+              </dl>
+              <dl>
+                <dt>たかさ</dt>
+                <dd id="height">(height)</dd>
+                <dt>おもさ</dt>
+                <dd id="weight">(weight)</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
