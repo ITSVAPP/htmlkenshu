@@ -40,10 +40,10 @@ const passwordChange = () => {
 const mojiSizecheck = (str) => {
 	let result = false;
 	if (str.length >= 8) {
-		document.getElementById("mojisize-polisy").classList.add("ok");
+		document.getElementById("mojisize-policy").classList.add("ok");
 		result = true;
 	} else {
-		document.getElementById("mojisize-polisy").classList.remove("ok");
+		document.getElementById("mojisize-policy").classList.remove("ok");
 		result = false;
 	}
 	return result;
@@ -51,10 +51,10 @@ const mojiSizecheck = (str) => {
 const alphabetCheck = (str) => {
 	let result = false;
 	if (str.match(/[a-zA-Z]/)) {
-		document.getElementById("alphabet-polisy").classList.add("ok");
+		document.getElementById("alphabet-policy").classList.add("ok");
 		result = true;
 	} else {
-		document.getElementById("alphabet-polisy").classList.remove("ok");
+		document.getElementById("alphabet-policy").classList.remove("ok");
 		result = false;
 	}
 	return result;
@@ -63,10 +63,10 @@ const alphabetCheck = (str) => {
 const numberCheck = (str) => {
 	let result = false;
 	if (str.match(/[0-9]/)) {
-		document.getElementById("number-polisy").classList.add("ok");
+		document.getElementById("number-policy").classList.add("ok");
 		result = true;
 	} else {
-		document.getElementById("number-polisy").classList.remove("ok");
+		document.getElementById("number-policy").classList.remove("ok");
 		result = false;
 	}
 	return result;

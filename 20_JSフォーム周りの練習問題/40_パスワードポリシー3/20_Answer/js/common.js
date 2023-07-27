@@ -4,16 +4,16 @@ const passwordChange = (e) => {
 	let disabledFlg = false;
 
 	if (password.length >= 8) {
-		document.querySelector("#mojisize-polisy").style.color = "green";
+		document.querySelector("#mojisize-policy").style.color = "green";
 	} else {
-		document.querySelector("#mojisize-polisy").style.color = "rgb(48, 46, 46)";
+		document.querySelector("#mojisize-policy").style.color = "rgb(48, 46, 46)";
 		disabledFlg = true;
 	}
 
 	if (password.match(/[A-Z]/)) {
-		document.querySelector("#alphabet-polisy").style.color = "green";
+		document.querySelector("#alphabet-policy").style.color = "green";
 	} else {
-		document.querySelector("#alphabet-polisy").style.color = "rgb(48, 46, 46)";
+		document.querySelector("#alphabet-policy").style.color = "rgb(48, 46, 46)";
 		disabledFlg = true;
 	}
 
