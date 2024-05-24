@@ -12,9 +12,6 @@ https://www.irasutoya.com/
 　②画像のアドレスをコピー
 
 ◆センスのある色の選び方
-・参考サイト
-http://hue360.herokuapp.com/
-
 ・使い方
 https://www.internetacademy.jp/it/design/web-design/well-balanced-color-hue360.html
 
@@ -26,9 +23,6 @@ https://saruwakakun.com/html-css/basic/text-setting
 
 ◆マウスを画像の上に持ってきたとき、動きをつけたい。
 https://cotodama.co/css_mouseover_img/
-
-◆HTMLの属性（タグに着けるオプション）を調べたい
-https://developer.mozilla.org/ja/docs/Web/HTML/Attributes
 
 ◆CSSリファレンス
 簡単

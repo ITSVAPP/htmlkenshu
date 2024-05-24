@@ -4,19 +4,18 @@
 ---------------------------------------------------------------------------*/
 body,
 html {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 body {
-	margin: 0px;
-	padding: 0px;
-	color: #666; /*全体の文字色*/
-	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro",
-		"ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka,
-		"ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
-	font-size: 15px; /*文字サイズ*/
-	line-height: 2; /*行間*/
-	background: #fff url(../images/bg.jpg) repeat center center/150px; /*背景色*/
+  margin: 0px;
+  padding: 0px;
+  color: #666; /*全体の文字色*/
+  font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+    "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /*フォント種類*/
+  font-size: 15px; /*文字サイズ*/
+  line-height: 2; /*行間*/
+  background: #fff url(../images/bg.jpg) repeat center center/150px; /*背景色*/
 }
 h1,
 h2,
@@ -33,185 +32,185 @@ dd,
 form,
 figure,
 form {
-	margin: 0px;
-	padding: 0px;
-	font-size: 100%;
-	font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  font-weight: normal;
 }
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 img {
-	border: none;
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
+  border: none;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 /*オリジナルフォント
 ---------------------------------------------------------------------------*/
 @font-face {
-	font-family: "かわいいフォント１";
-	src: url("../font/Ronde-B_square.otf") format("woff");
+  font-family: "かわいいフォント１";
+  src: url("../font/Ronde-B_square.otf") format("woff");
 }
 
 @font-face {
-	font-family: "かわいいフォント２";
-	src: url("../font/WaonJoyo-R.otf") format("woff");
+  font-family: "かわいいフォント２";
+  src: url("../font/WaonJoyo-R.otf") format("woff");
 }
 
 /*maincontentsブロック
 ---------------------------------------------------------------------------*/
 .maincontents {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /*メインイラスト 名前
 ---------------------------------------------------------------------------*/
 .mainimg {
-	position: fixed;
-	top: 0px;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	background: url(../images/bg_dot.png) no-repeat left top / 60%,
-		url(../images/bg_main.jpg) no-repeat right bottom / cover; /*背景画像*/
+  position: fixed;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg_dot.png) no-repeat left top / 60%,
+    url(../images/bg_main.jpg) no-repeat right bottom / cover; /*背景画像*/
 }
 
 /*名前*/
 .name {
-	text-align: center; /*中央に設定*/
-	font-family: "かわいいフォント１";
-	font-size: 50px;
+  text-align: center; /*中央に設定*/
+  font-family: "かわいいフォント１";
+  font-size: 50px;
 }
 
 /*アニメーション
 ---------------------------------------------------------------------------*/
 /*アニメーションのフレーム設定*/
 @keyframes contentAnimation {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*アニメーション動作設定*/
 .content {
-	animation-name: contentAnimation; /*上のアニメーションで指定しているkeyframesの名前（animation）*/
-	animation-duration: 4s; /*アニメーションの実行時間。秒。*/
-	animation-fill-mode: both; /*アニメーションの完了後、最後のキーフレームを維持する*/
+  animation-name: contentAnimation; /*上のアニメーションで指定しているkeyframesの名前（animation）*/
+  animation-duration: 4s; /*アニメーションの実行時間。秒。*/
+  animation-fill-mode: both; /*アニメーションの完了後、最後のキーフレームを維持する*/
 }
 
 /*コンテンツ
 ---------------------------------------------------------------------------*/
 /*共通*/
 .content {
-	position: absolute; /*画面に対して絶対表示*/
-	width: 200px; /*幅*/
-	height: 200px; /*高さ*/
-	border-radius: 50%; /*円形にする設定。この行を削除すると正方形になる。*/
-	transition: 0.2s; /*秒*/
+  position: absolute; /*画面に対して絶対表示*/
+  width: 200px; /*幅*/
+  height: 200px; /*高さ*/
+  border-radius: 50%; /*円形にする設定。この行を削除すると正方形になる。*/
+  transition: 0.2s; /*秒*/
 }
 
 .content1 {
-	left: 6%; /*ウィンドウに対して左から指定の場所に配置*/
-	top: 10%; /*ウィンドウに対して上から指定の場所に配置*/
-	background-color: #e5d7ee; /*背景色*/
+  left: 6%; /*ウィンドウに対して左から指定の場所に配置*/
+  top: 10%; /*ウィンドウに対して上から指定の場所に配置*/
+  background-color: #e5d7ee; /*背景色*/
 }
 
 .content2 {
-	left: 16%; /*ウィンドウに対して左から指定の場所に配置*/
-	top: 25%; /*ウィンドウに対して上から指定の場所に配置*/
-	background-color: #fcf1d3; /*背景色*/
-	animation-delay: 0.2s; /*0.2秒だけ遅れてアニメーションをスタートさせる設定*/
+  left: 16%; /*ウィンドウに対して左から指定の場所に配置*/
+  top: 25%; /*ウィンドウに対して上から指定の場所に配置*/
+  background-color: #fcf1d3; /*背景色*/
+  animation-delay: 0.2s; /*0.2秒だけ遅れてアニメーションをスタートさせる設定*/
 }
 .content3 {
-	left: 26%; /*ウィンドウに対して左から指定の場所に配置*/
-	top: 40%; /*ウィンドウに対して上から指定の場所に配置*/
-	background-color: #eef5d3; /*背景色*/
-	animation-delay: 0.4s; /*0.4秒だけ遅れてアニメーションをスタートさせる設定*/
+  left: 26%; /*ウィンドウに対して左から指定の場所に配置*/
+  top: 40%; /*ウィンドウに対して上から指定の場所に配置*/
+  background-color: #eef5d3; /*背景色*/
+  animation-delay: 0.4s; /*0.4秒だけ遅れてアニメーションをスタートさせる設定*/
 }
 .content4 {
-	left: 36%; /*ウィンドウに対して左から指定の場所に配置*/
-	top: 55%; /*ウィンドウに対して上から指定の場所に配置*/
-	background-color: #c6eddb; /*背景色*/
-	animation-delay: 0.6s; /*0.6秒だけ遅れてアニメーションをスタートさせる設定*/
+  left: 36%; /*ウィンドウに対して左から指定の場所に配置*/
+  top: 55%; /*ウィンドウに対して上から指定の場所に配置*/
+  background-color: #c6eddb; /*背景色*/
+  animation-delay: 0.6s; /*0.6秒だけ遅れてアニメーションをスタートさせる設定*/
 }
 .content5 {
-	left: 46%; /*ウィンドウに対して左から指定の場所に配置*/
-	top: 70%; /*ウィンドウに対して上から指定の場所に配置*/
-	background-color: #d5e0f1; /*背景色*/
-	animation-delay: 0.8s; /*0.8秒だけ遅れてアニメーションをスタートさせる設定*/
+  left: 46%; /*ウィンドウに対して左から指定の場所に配置*/
+  top: 70%; /*ウィンドウに対して上から指定の場所に配置*/
+  background-color: #d5e0f1; /*背景色*/
+  animation-delay: 0.8s; /*0.8秒だけ遅れてアニメーションをスタートさせる設定*/
 }
 
 /*コンテンツタイトル*/
 .title {
-	height: 100%; /*高さを幅いっぱいに指定*/
-	display: flex; /*高さに対して中央配置*/
-	align-items: center; /*高さに対して中央配置*/
-	justify-content: center; /*幅に対して中央配置*/
-	text-align: center; /*中央に設定*/
-	font-family: "かわいいフォント２"; /*フォント設定*/
-	font-weight: bold; /*文字を太く*/
-	font-size: 30px; /*文字サイズ*/
+  height: 100%; /*高さを幅いっぱいに指定*/
+  display: flex; /*高さに対して中央配置*/
+  align-items: center; /*高さに対して中央配置*/
+  justify-content: center; /*幅に対して中央配置*/
+  text-align: center; /*中央に設定*/
+  font-family: "かわいいフォント２"; /*フォント設定*/
+  font-weight: bold; /*文字を太く*/
+  font-size: 30px; /*文字サイズ*/
 }
 /*コンテンツ内容*/
 .description {
-	visibility: hidden; /*非表示*/
-	font-size: 0; /*文字サイズ*/
-	height: 0; /*高さ*/
-	width: 0; /*幅*/
+  visibility: hidden; /*非表示*/
+  font-size: 0; /*文字サイズ*/
+  height: 0; /*高さ*/
+  width: 0; /*幅*/
 }
 
 /*コンテンツ マウスオーバー
 ---------------------------------------------------------------------------*/
 /*マウスオン時*/
 .content:hover {
-	transition: 0.5s; /*秒*/
-	width: 500px; /*幅*/
-	height: 400px; /*高さ*/
-	border-radius: 45%; /*円形にする設定。この行を削除すると正方形になる。*/
-	font-size: 15px; /*文字サイズ*/
-	z-index: 10; /*最前面*/
+  transition: 0.5s; /*秒*/
+  width: 500px; /*幅*/
+  height: 400px; /*高さ*/
+  border-radius: 45%; /*円形にする設定。この行を削除すると正方形になる。*/
+  font-size: 15px; /*文字サイズ*/
+  z-index: 10; /*最前面*/
 }
 
 /*コンテンツタイトル マウスオン*/
 .content:hover > .title {
-	height: auto; /*高さ*/
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center; /*中央に設定*/
-	font-family: "かわいいフォント２"; /*フォント設定*/
-	font-weight: bold; /*文字を太く*/
-	font-size: 30px; /*文字サイズ*/
+  height: auto; /*高さ*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /*中央に設定*/
+  font-family: "かわいいフォント２"; /*フォント設定*/
+  font-weight: bold; /*文字を太く*/
+  font-size: 30px; /*文字サイズ*/
 }
 /*コンテンツ内容 マウスオン*/
 .content:hover > .description {
-	height: 60%; /*高さ*/
-	width: auto; /*幅*/
-	font-size: 18px; /*文字サイズ*/
-	background-color: white; /*背景色*/
-	visibility: visible; /*見えるようにする*/
-	margin: 5% 10% 20% 10%; /*外側余白*/
-	padding: 0% 5% 5% 5%; /*内側余白*/
-	border-radius: 10%; /*円形にする設定。この行を削除すると正方形になる。*/
-	transition: all 0.2s; /*アニメーション*/
-	transition-delay: 0.3s; /*アニメーション遅らせる*/
+  height: 60%; /*高さ*/
+  width: auto; /*幅*/
+  font-size: 18px; /*文字サイズ*/
+  background-color: white; /*背景色*/
+  visibility: visible; /*見えるようにする*/
+  margin: 5% 10% 20% 10%; /*外側余白*/
+  padding: 0% 5% 5% 5%; /*内側余白*/
+  border-radius: 10%; /*円形にする設定。この行を削除すると正方形になる。*/
+  transition: all 0.2s; /*アニメーション*/
+  transition-delay: 0.3s; /*アニメーション遅らせる*/
 }
 
 /*フッター設定
 ---------------------------------------------------------------------------*/
 .footer {
-	clear: both;
-	padding: 10px;
-	height: 5%;
-	position: fixed;
-	bottom: 0;
-	right: 0;
+  clear: both;
+  padding: 10px;
+  height: 5%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 .footer a {
-	text-decoration: none; /*リンクの下線を消す*/
+  text-decoration: none; /*リンクの下線を消す*/
 }
