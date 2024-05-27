@@ -59,16 +59,16 @@ img {
   src: url("../font/WaonJoyo-R.otf") format("woff");
 }
 
-/*maincontentsブロック
+/*main-contentsブロック
 ---------------------------------------------------------------------------*/
-.maincontents {
+.main-contents {
   width: 100%;
   height: 100%;
 }
 
 /*メインイラスト 名前
 ---------------------------------------------------------------------------*/
-.mainimg {
+.main-img {
   position: fixed;
   top: 0px;
   z-index: -1;
