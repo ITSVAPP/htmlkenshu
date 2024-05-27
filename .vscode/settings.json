@@ -3,6 +3,6 @@
   "extensions.ignoreRecommendations": false,
   "cSpell.words": ["Infotec", "Joyo", "Kaku", "Maru", "Udemy", "Waon"],
   "markdown.copyFiles.destination": {
-    "/00_内定者研修用/開発ガイド.md": "/docs/images/${documentBaseName}/"
+    "/00_内定者研修用/README.md": "/docs/images/${documentBaseName}/"
   }
 }

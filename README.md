@@ -1,5 +1,7 @@
 # HTML 研修で学習する教材
 
+html は[開発者ガイド](https://github.com/ITSVAPP/htmlkenshu/tree/main/00_%E5%86%85%E5%AE%9A%E8%80%85%E7%A0%94%E4%BF%AE%E7%94%A8)参考
+
 ## 開発環境構築
 
 クローンコマンド
