@@ -1,7 +1,7 @@
 {
   "editor.formatOnSave": true,
   "extensions.ignoreRecommendations": false,
-  "cSpell.words": ["Infotec", "Joyo", "Kaku", "Maru", "Udemy", "Waon"],
+  "cSpell.words": ["htmlkenshu", "Infotec", "Joyo", "Kaku", "Maru", "Udemy", "Waon"],
   "markdown.copyFiles.destination": {
     "/00_内定者研修用/README.md": "/docs/images/${documentBaseName}/"
   }

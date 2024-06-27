@@ -2,28 +2,24 @@
 
 html は[開発者ガイド](https://github.com/ITSVAPP/htmlkenshu/tree/main/00_%E5%86%85%E5%AE%9A%E8%80%85%E7%A0%94%E4%BF%AE%E7%94%A8)参考
 
-## 開発環境構築
+## 資材のダウンロード
 
-クローンコマンド
+[ここのリンク](https://github.com/ITSVAPP/htmlkenshu/archive/refs/heads/main.zip)からダウンロード可能
 
-git clone https://github.com/ITSVAPP/htmlkenshu.git
+### git を利用する場合
+
+`git clone https://github.com/ITSVAPP/htmlkenshu.git`
 
 ### ブランチの切り替え
 
 - git checkout main
 - git checkout answer
 
-## HTML & CSS と Web デザイン入門
-
-### table 表組の基本
-
-p69 ～ p82
-
 ## おすすめ Udemy 教材
 
 - [ちゃんと学ぶ、HTML/CSS + JavaScript](https://iftc-svcjp.udemy.com/course/html-css-js/learn/)
 
-## Youtube
+## おすすめ Youtube 教材
 
 ### HTML・CSS
 

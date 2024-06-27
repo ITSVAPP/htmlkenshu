@@ -9,7 +9,9 @@
 ### 前提条件
 
 - VSCode をインストールしていること
-- 既に資材をローカルにダウンロードしていること
+- 既に[資材](https://github.com/ITSVAPP/htmlkenshu/archive/refs/heads/main.zip)をローカルにダウンロードしていること
+  - 解凍すること
+  - VSCode を起動し、「ファイル」⇒「フォルダーを開く」から解凍した`htmlkenshu-main`を選択する
 
 ### 手順
 
