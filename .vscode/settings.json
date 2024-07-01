@@ -15,5 +15,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.words": ["htmlkenshu", "Infotec", "Joyo", "Kaku", "Maru", "Udemy", "Waon"],
-  "cSpell.ignorePaths": ["**/.vscode/**"]
+  "cSpell.ignorePaths": ["**/.vscode/**"],
+  "liveServer.settings.CustomBrowser": "microsoft-edge"
 }
