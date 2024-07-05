@@ -12,7 +12,7 @@ const displayPokemon = (pokemon) => {
   const { id, name, height, weight, types, sprites } = pokemon;
   const { front_default, back_default } = sprites;
 
-  document.getElementById("no").textContent = ("00000" + id).slice(-5);
+  document.getElementById("no").textContent = String(id).padStart(5, "0");
   document.getElementById("name").textContent = name;
   document.getElementById("height").textContent =
     (height / 10).toFixed(1) + "m";
