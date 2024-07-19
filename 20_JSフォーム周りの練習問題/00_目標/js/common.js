@@ -1,100 +1,113 @@
 let timeoutId = null;
 
-const viewOk = () => {
-  const password = document.getElementsByName("password")[0].value;
-  const repassword = document.getElementsByName("repassword")[0].value;
-  const recheckResult = document.getElementById("repassowrd-check-result");
-  if (!password || !repassword) {
-    recheckResult.textContent = "";
+const getPasswordElements = () => ({
+  password: document.querySelector("[name='password']"),
+  repassword: document.querySelector("[name='repassword']"),
+  repasswordCheckResult: document.getElementById("repassword-check-result"),
+  passwordCheckResult: document.getElementById("password-check-result"),
+  changeBtn: document.getElementById("change-btn"),
+  mojiSizePolicy: document.getElementById("mojisize-policy"),
+  alphabetPolicy: document.getElementById("alphabet-policy"),
+  numberPolicy: document.getElementById("number-policy"),
+});
+
+const viewOk = ({ password, repassword, repasswordCheckResult }) => {
+  if (!password.value || !repassword.value) {
+    repasswordCheckResult.textContent = "";
     return;
   }
-  if (password === repassword) {
-    recheckResult.textContent = "一致";
-    recheckResult.style.color = "green";
+  if (password.value === repassword.value) {
+    repasswordCheckResult.textContent = "一致";
+    repasswordCheckResult.style.color = "green";
   } else {
-    recheckResult.textContent = "不一致";
-    recheckResult.style.color = "#e84757";
+    repasswordCheckResult.textContent = "不一致";
+    repasswordCheckResult.style.color = "#e84757";
   }
 };
 
 const passwordChange = () => {
-  const password = document.getElementsByName("password")[0].value;
-  const mojiCheckResult = mojiSizecheck(password);
-  const alphabetCheckresult = alphabetCheck(password);
-  const numberCheckresult = numberCheck(password);
+  const {
+    password,
+    repassword,
+    passwordCheckResult,
+    changeBtn,
+    mojiSizePolicy,
+    alphabetPolicy,
+    numberPolicy,
+    repasswordCheckResult,
+  } = getPasswordElements();
 
-  const checkResult = document.getElementById("passowrd-check-result");
-  if (mojiCheckResult && alphabetCheckresult && numberCheckresult) {
-    checkResult.textContent = "OK";
-    checkResult.style.color = "green";
+  const mojiCheckResult = mojiSizecheck(password.value, mojiSizePolicy);
+  const alphabetCheckResult = alphabetCheck(password.value, alphabetPolicy);
+  const numberCheckResult = numberCheck(password.value, numberPolicy);
+
+  if (mojiCheckResult && alphabetCheckResult && numberCheckResult) {
+    passwordCheckResult.textContent = "OK";
+    passwordCheckResult.style.color = "green";
   } else {
-    checkResult.textContent = "NG";
-    checkResult.style.color = "#e84757";
+    passwordCheckResult.textContent = "NG";
+    passwordCheckResult.style.color = "#e84757";
   }
 
   clearTimeout(timeoutId);
-  timeoutId = setTimeout(viewOk, 500);
+  timeoutId = setTimeout(
+    () => viewOk({ password, repassword, repasswordCheckResult }),
+    300
+  );
 
-  // ボタン制御
-  const btn = document.getElementById("change-btn");
   if (
     mojiCheckResult &&
-    alphabetCheckresult &&
-    numberCheckresult &&
-    password === repassword
+    alphabetCheckResult &&
+    numberCheckResult &&
+    password.value === repassword.value
   ) {
-    btn.classList.remove("err");
+    changeBtn.classList.remove("err");
   } else {
-    btn.classList.add("err");
+    changeBtn.classList.add("err");
   }
 };
 
-const mojiSizecheck = (str) => {
-  let result = false;
+const mojiSizecheck = (str, mojiSizePolicy) => {
   if (str.length >= 8) {
-    document.getElementById("mojisize-policy").classList.add("ok");
-    result = true;
+    mojiSizePolicy.classList.add("ok");
+    return true;
   } else {
-    document.getElementById("mojisize-policy").classList.remove("ok");
-    result = false;
+    mojiSizePolicy.classList.remove("ok");
+    return false;
   }
-  return result;
-};
-const alphabetCheck = (str) => {
-  let result = false;
-  if (str.match(/[a-zA-Z]/)) {
-    document.getElementById("alphabet-policy").classList.add("ok");
-    result = true;
-  } else {
-    document.getElementById("alphabet-policy").classList.remove("ok");
-    result = false;
-  }
-  return result;
 };
 
-const numberCheck = (str) => {
-  let result = false;
-  if (str.match(/[0-9]/)) {
-    document.getElementById("number-policy").classList.add("ok");
-    result = true;
+const alphabetCheck = (str, alphabetPolicy) => {
+  if (/[a-zA-Z]/.test(str)) {
+    alphabetPolicy.classList.add("ok");
+    return true;
   } else {
-    document.getElementById("number-policy").classList.remove("ok");
-    result = false;
+    alphabetPolicy.classList.remove("ok");
+    return false;
   }
-  return result;
 };
 
-window.onload = function () {
-  // keyup制御
-  document.querySelectorAll("input").forEach((element) => {
+const numberCheck = (str, numberPolicy) => {
+  if (/[0-9]/.test(str)) {
+    numberPolicy.classList.add("ok");
+    return true;
+  } else {
+    numberPolicy.classList.remove("ok");
+    return false;
+  }
+};
+
+window.onload = () => {
+  const { password, repassword } = getPasswordElements();
+
+  [password, repassword].forEach((element) => {
     element.addEventListener("keyup", passwordChange);
   });
 
-  // エンターキー制御
   document.querySelector("form").addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-      const btn = document.getElementById("change-btn");
-      if (btn.classList.contains("err")) {
+      const { changeBtn } = getPasswordElements();
+      if (changeBtn.classList.contains("err")) {
         e.preventDefault();
       }
     }
