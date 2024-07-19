@@ -41,19 +41,17 @@ const passwordChange = () => {
   const alphabetCheckResult = alphabetCheck(password.value, alphabetPolicy);
   const numberCheckResult = numberCheck(password.value, numberPolicy);
 
-  if (mojiCheckResult && alphabetCheckResult && numberCheckResult) {
-    passwordCheckResult.textContent = "OK";
-    passwordCheckResult.style.color = "green";
-  } else {
-    passwordCheckResult.textContent = "NG";
-    passwordCheckResult.style.color = "#e84757";
-  }
-
   clearTimeout(timeoutId);
-  timeoutId = setTimeout(
-    () => viewOk({ password, repassword, repasswordCheckResult }),
-    300
-  );
+  timeoutId = setTimeout(() => {
+    if (mojiCheckResult && alphabetCheckResult && numberCheckResult) {
+      passwordCheckResult.textContent = "OK";
+      passwordCheckResult.style.color = "green";
+    } else {
+      passwordCheckResult.textContent = "NG";
+      passwordCheckResult.style.color = "#e84757";
+    }
+    viewOk({ password, repassword, repasswordCheckResult });
+  }, 300);
 
   if (
     mojiCheckResult &&
