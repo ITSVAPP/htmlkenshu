@@ -16,8 +16,8 @@
    図鑑番号 25
    名前 pikachu
    タイプ electric
-   体重 4
-   身長 60
+   身長 4
+   体重 60
  */
 
 const getPokemon = async () => {
