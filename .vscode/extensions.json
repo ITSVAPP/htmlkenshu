@@ -1,8 +1,3 @@
 {
-  "recommendations": [
-    "ritwickdey.liveserver",
-    "ms-ceintl.vscode-language-pack-ja",
-    "esbenp.prettier-vscode",
-    "streetsidesoftware.code-spell-checker"
-  ]
+  "recommendations": ["ritwickdey.liveserver", "ms-ceintl.vscode-language-pack-ja", "esbenp.prettier-vscode"]
 }
