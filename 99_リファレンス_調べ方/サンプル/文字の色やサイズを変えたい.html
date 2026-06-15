@@ -2,20 +2,26 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>文字の色やサイズを変えたい</title>
     <style>
-      /* 色は color、大きさは font-size で指定します（昔の font タグは使いません） */
+      /*
+        文字の色は color、大きさは font-size で変えます。
+        （昔の <font> タグは今は使いません。色やサイズは CSS で指定します）
+      */
       .red {
-        color: #e2401b;
+        color: #e2401b; /* 色。"red" のような色名でも、#e2401b のようなカラーコードでもOK */
       }
       .big {
-        font-size: 24px;
+        font-size: 24px; /* 大きさ。24px を 32px にするともっと大きくなります */
       }
     </style>
   </head>
   <body>
     <p class="red">これは赤い文字です。</p>
     <p class="big">これは大きい文字です。</p>
+
+    <!-- class はスペースで区切ると 2 つ以上つけられます（赤色＋大きいの合わせ技） -->
     <p><span class="red big">色と大きさを両方</span>変えることもできます。</p>
   </body>
 </html>

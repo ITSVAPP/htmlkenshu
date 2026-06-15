@@ -2,10 +2,21 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>文字を太字にしたい</title>
   </head>
   <body>
-    <!-- 強調したい文字は strong で囲むと太字になります -->
+    <!--
+      太字にして「強調」したい文字は <strong> で囲みます。
+      ・<strong> は見た目が太字になるだけでなく「ここが大事！」という意味も持ちます（おすすめ）。
+      ・囲んだ部分だけが太字になります。
+    -->
     <p>これは普通の文字です。<strong>ここは太字で強調</strong>しています。</p>
+
+    <!--
+      「意味は付けず、見た目だけ太くしたい」ときは CSS の font-weight: bold; も使えます。
+      style="..." はその要素だけに直接 CSS を書く書き方です。
+    -->
+    <p style="font-weight: bold;">font-weight: bold; でも太字にできます。</p>
   </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ボタンを作りたい</title>
+    <style>
+      /*
+        「ボタン風」の見た目は、リンク <a> に CSS で色や余白を付けて作れます。
+        スタイルを .button という名前にまとめ、好きな要素に class="button" を付けます。
+      */
+      .button {
+        display: inline-block; /* 余白(padding)が効くようにする。文字を“箱”として扱う指定 */
+        background-color: #1565c0; /* ボタンの背景色 */
+        color: #fff; /* 文字の色（白） */
+        padding: 10px 20px; /* 内側のすき間（上下 10px・左右 20px）。これがボタンの大きさになる */
+        border-radius: 6px; /* 角を丸く */
+        text-decoration: none; /* リンクの下線を消す */
+      }
+      .button:hover {
+        background-color: #0d47a1; /* マウスを乗せたら少し濃い色に変える */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- リンクをボタンの見た目にした例（押すと href 先へ移動します） -->
+    <p><a href="https://developer.mozilla.org/ja/" class="button">リンク風ボタン</a></p>
+
+    <!--
+      送信など「動作」のためのボタンは <button> タグを使います。
+      同じ .button を付ければ、見た目もそろえられます。
+    -->
+    <p><button type="button" class="button">button タグのボタン</button></p>
+  </body>
+</html>

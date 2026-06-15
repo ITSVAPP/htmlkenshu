@@ -2,19 +2,26 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>背景に画像を敷きたい</title>
     <style>
-      /* 背景画像は background-image。画面いっぱいに広げるなら background-size: cover; */
+      /*
+        背景に画像を敷くには background-image: url("ファイルの場所");
+        セットでよく使うもの:
+          background-size: cover;      … 画面いっぱいに、すき間なく広げる
+          background-position: center; … 画像の中心を表示の中心に合わせる
+      */
       body {
         background-image: url("images/背景.png");
         background-size: cover;
         background-position: center;
-        height: 100vh;
-        margin: 0;
+        height: 100vh; /* 画面の高さいっぱい（100vh = 画面の高さ 100%） */
+        margin: 0; /* ページのまわりのすき間を消して、ふちまで敷く */
       }
     </style>
   </head>
   <body>
+    <!-- 背景が濃いので、文字は白(#fff)にして読みやすくしています -->
     <h1 style="color: #fff">背景に画像を敷いた例</h1>
   </body>
 </html>

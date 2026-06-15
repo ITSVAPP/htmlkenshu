@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>行間を広げて読みやすくしたい</title>
+    <style>
+      /*
+        文章が詰まって読みにくいときは line-height（行の高さ）を広げます。
+        ・1.8 のような「数字だけ」で指定すると、文字サイズの 1.8 倍の行間になります。
+        ・1.5〜2.0 くらいが読みやすい目安。数字を大きくすると行間が広がります。
+      */
+      .narrow {
+        line-height: 1.2; /* せまい行間 */
+      }
+      .wide {
+        line-height: 2; /* 広い行間＝ゆったり読みやすい */
+      }
+    </style>
+  </head>
+  <body>
+    <h3>行間がせまい例（line-height: 1.2）</h3>
+    <p class="narrow">
+      行間がせまいと、複数行の文章は少し詰まって見えます。これは 1 行目です。これは
+      2 行目です。これは 3 行目です。これは 4 行目です。
+    </p>
+
+    <h3>行間が広い例（line-height: 2）</h3>
+    <p class="wide">
+      行間を広げると、長い文章もゆったり読みやすくなります。これは 1 行目です。これは
+      2 行目です。これは 3 行目です。これは 4 行目です。
+    </p>
+  </body>
+</html>

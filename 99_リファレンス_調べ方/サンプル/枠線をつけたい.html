@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>枠線をつけたい</title>
+    <style>
+      /*
+        枠線は border。値は「太さ 線の種類 色」の 3 つをセットで書きます。
+          例) border: 2px solid #1565c0;
+              ・2px   … 線の太さ
+              ・solid … 線の種類（実線）。ほかに dashed（破線）, dotted（点線）
+              ・#1565c0 … 線の色
+      */
+      .box {
+        padding: 12px;
+        margin-bottom: 12px; /* 箱どうしが詰まらないように下にすき間 */
+      }
+      .solid {
+        border: 2px solid #1565c0; /* 実線 */
+      }
+      .dashed {
+        border: 2px dashed #e2401b; /* 破線 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box solid">実線の枠線（solid）</div>
+    <div class="box dashed">破線の枠線（dashed）</div>
+  </body>
+</html>

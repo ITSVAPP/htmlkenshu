@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!--
+      ▼ これがスマホ対応の超重要な 1 行（viewport の指定）です。
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        ・width=device-width … 表示の横幅を、その端末の画面幅に合わせる
+        ・initial-scale=1.0   … 最初の拡大率を等倍にする
+      【あるある】これが無いと、スマホで「文字がやたら小さい」「PC 表示が縮んで出る」
+      になります。新しい HTML を作るときは、最初から入れておくのが基本です。
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>スマホ対応したい（viewport）</title>
+
+    <style>
+      body {
+        font-size: 18px;
+      }
+      .note {
+        background-color: #eef6ff;
+        padding: 16px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="note">
+      この 1 行（viewport）が入っていると、スマホでも文字が読みやすい大きさで表示されます。
+      ブラウザの開発者ツール（F12）でスマホ表示に切り替えて、確かめてみましょう。
+    </p>
+  </body>
+</html>

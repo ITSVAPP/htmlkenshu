@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>要素を中央に配置したい</title>
+    <style>
+      /*
+        「箱（ボックス）ごと中央に置きたい」ときの 2 大パターンです。
+        ※文字だけを中央に寄せたいなら text-align: center;（「文字を中央に寄せたい.html」）でOK。
+      */
+
+      /* パターン1：左右の中央に置く → 幅を決めて margin: 0 auto; */
+      .center-x {
+        width: 200px; /* 幅を決めるのが条件（決めないと中央になりません） */
+        margin: 0 auto; /* 左右の余白を auto にすると、左右が均等＝中央になる */
+        background-color: #cfe8ff;
+        padding: 16px;
+      }
+
+      /* パターン2：上下も左右も“ど真ん中”に置く → 親を flex にする */
+      .frame {
+        display: flex;
+        justify-content: center; /* 横方向を中央に */
+        align-items: center; /* 縦方向を中央に */
+        height: 200px; /* 縦の中央を見せるため、親に高さを持たせる */
+        background-color: #f0f0f0;
+      }
+      .item {
+        background-color: #ffd966;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>① 左右の中央（margin: 0 auto;）</h3>
+    <div class="center-x">中央ぞろえの箱</div>
+
+    <h3>② ど真ん中（flex で縦も横も中央）</h3>
+    <div class="frame">
+      <div class="item">ど真ん中</div>
+    </div>
+  </body>
+</html>

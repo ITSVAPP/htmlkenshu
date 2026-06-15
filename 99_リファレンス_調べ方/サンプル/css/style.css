@@ -1,9 +1,16 @@
-/* このファイルに見た目のルールをまとめて書きます */
+/*
+  これは「外部 CSS ファイル」です。
+  HTML 側の <link rel="stylesheet" href="css/style.css" /> から読み込まれています。
+  見た目のルールをここにまとめて書くと、HTML がスッキリします。
+*/
+
+/* ページ全体の文字の設定（body に書くとページ全体に効きます） */
 body {
-  font-family: sans-serif;
-  color: #333;
+  font-family: sans-serif; /* 読みやすいゴシック体系のフォント */
+  color: #333; /* 文字の色（真っ黒より少しやわらかいグレー） */
 }
 
+/* 見出し(h1)の色 */
 h1 {
   color: #1565c0;
 }

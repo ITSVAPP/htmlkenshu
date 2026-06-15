@@ -2,20 +2,26 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>背景に色を付けたい</title>
     <style>
-      /* 背景色は background-color。ページ全体なら body に指定します */
+      /*
+        背景の色は background-color で指定します。
+        ・ページ全体に付けたいなら body に指定
+        ・一部だけ付けたいなら、その要素（下では .box）に指定
+        色は色名(red)でも、#eef6ff のようなカラーコードでも OK。
+      */
       body {
-        background-color: #eef6ff;
+        background-color: #eef6ff; /* ページ全体：うすい青 */
       }
       .box {
-        background-color: #ffd966;
-        padding: 16px;
+        background-color: #ffd966; /* この箱だけ：黄色 */
+        padding: 16px; /* 文字のまわりに余白（色の付いた範囲が見やすくなる） */
       }
     </style>
   </head>
   <body>
-    <p>ページ全体の背景にうすい青を付けています。</p>
-    <div class="box">この部分だけ別の背景色にもできます。</div>
+    <p>ページ全体の背景に、うすい青を付けています。</p>
+    <div class="box">この部分だけ、別の背景色にもできます。</div>
   </body>
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!--
+      ▼ 文字化け（□ や「�」になる）を防ぐ超重要な 1 行が、この charset です。
+        <meta charset="UTF-8" />
+        ・ページの文字の種類を「UTF-8」と宣言しています。
+        ・<head> の中の、できるだけ上のほうに書きます。
+      【あるある】日本語が □ や「�」になるときの原因は、たいてい次の 2 つ:
+        1. この <meta charset="UTF-8" /> を書き忘れている
+        2. ファイル自体が UTF-8 以外で保存されている
+           → VSCode なら、右下の文字コード表示をクリックして
+             「UTF-8 で保存し直す」と直ります。
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字化けを直したい（charset）</title>
+  </head>
+  <body>
+    <p>日本語（あいうえお・漢字・カタカナ）が、文字化けせずに表示されていれば成功です。</p>
+  </body>
+</html>

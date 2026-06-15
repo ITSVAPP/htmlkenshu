@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>角を丸くしたい</title>
+    <style>
+      /*
+        角を丸くするには border-radius。数字が大きいほど丸くなります。
+          border-radius: 8px; … 少しだけ丸い角
+          border-radius: 50%; … 正方形なら“まん丸”に（丸いアイコン画像にも使える）
+      */
+      .box {
+        width: 120px;
+        height: 120px;
+        background-color: #1565c0;
+        color: #fff;
+        margin-bottom: 12px;
+        /* ↓ 中の文字を中央にそろえる（おまけ。詳しくは「要素を中央に配置したい.html」） */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .small {
+        border-radius: 8px; /* 角を少し丸く */
+      }
+      .circle {
+        border-radius: 50%; /* まん丸に */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box small">8px</div>
+    <div class="box circle">50%</div>
+  </body>
+</html>
