@@ -2,7 +2,7 @@
   "editor.formatOnSave": true,
   "extensions.ignoreRecommendations": false,
   "markdown.copyFiles.destination": {
-    "/00_内定者研修用/README.md": "/docs/images/${documentBaseName}/"
+    "/00_はじめに/README.md": "/docs/images/${documentBaseName}/"
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "[html]": {
