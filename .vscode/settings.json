@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "extensions.ignoreRecommendations": false,
+  "markdown.copyFiles.destination": {
+    "/00_はじめに/README.md": "/docs/images/${documentBaseName}/"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.CustomBrowser": "microsoft-edge"
+}
