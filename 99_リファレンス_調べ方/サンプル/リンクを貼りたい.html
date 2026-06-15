@@ -2,12 +2,22 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>リンクを貼りたい</title>
   </head>
   <body>
-    <!-- リンクは a タグ。href にリンク先の URL を書きます -->
+    <!--
+      リンクは <a> タグ。href に「リンク先」を書きます。
+        ・よそのサイト       → "https://..." のように URL をそのまま書く
+        ・同じサイト内の別ページ → "about.html" のようにファイル名を書く
+      <a>〜</a> で囲んだ文字が、クリックできるリンクになります。
+    -->
     <p><a href="https://developer.mozilla.org/ja/">MDN（HTML/CSS の公式リファレンス）を開く</a></p>
-    <!-- 別タブで開きたいときは target="_blank" を付けます -->
+
+    <!--
+      別のタブで開きたいときは target="_blank" を付けます。
+      rel="noopener" は安全のための“おまじない”（target="_blank" とセットで付けると覚えてOK）。
+    -->
     <p>
       <a href="https://developer.mozilla.org/ja/" target="_blank" rel="noopener">
         別タブで開く

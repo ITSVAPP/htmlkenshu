@@ -2,20 +2,30 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>要素を横に並べたい</title>
     <style>
-      /* display: flex; を付けると、中の要素が横に並びます。gap は間隔です */
+      /*
+        ▼「横に並べたい」ときは、まとめている“親”に display: flex; を付けます。
+          親（ここでは .row）の中の要素が、左から順に横に並びます。
+      */
       .row {
-        display: flex;
-        gap: 12px;
+        display: flex; /* これが横並びのスイッチ。この 1 行を消すと縦並びに戻ります */
+        gap: 12px; /* 並べた箱どうしのすき間。数字を大きくすると間隔が広がります */
       }
+
+      /* ↓ 並べる中身の箱。見やすいように色と余白を付けただけです */
       .card {
-        background-color: #f0f0f0;
-        padding: 16px;
+        background-color: #f0f0f0; /* 箱の背景色（うすいグレー） */
+        padding: 16px; /* 箱の内側のすき間 */
       }
     </style>
   </head>
   <body>
+    <!--
+      ポイント：横に並べたい要素を、親の <div class="row"> でまとめて囲みます。
+      中の <div class="card"> を 1 つコピーして増やすと、並ぶ箱も増えます。試してみよう。
+    -->
     <div class="row">
       <div class="card">ボックス1</div>
       <div class="card">ボックス2</div>

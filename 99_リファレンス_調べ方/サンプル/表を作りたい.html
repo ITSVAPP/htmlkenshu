@@ -2,21 +2,32 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>表を作りたい</title>
     <style>
-      /* 線を見やすくするための最低限のスタイル */
+      /*
+        表の見た目は、まずはこの最低限でOK。
+        ・border-collapse: collapse; … セルの線の“二重線”を 1 本にまとめる
+          （これが無いと線がガタついて見えます）
+      */
       table {
         border-collapse: collapse;
       }
       th,
       td {
-        border: 1px solid #888;
-        padding: 4px 8px;
+        border: 1px solid #888; /* セルのまわりの線 */
+        padding: 4px 8px; /* セルの内側のすき間（文字が窮屈にならないように） */
       }
     </style>
   </head>
   <body>
-    <!-- table=表、tr=行、th=見出しのセル、td=データのセル -->
+    <!--
+      表は「行」を上から順に重ねて作ります。タグの意味:
+        <table> … 表全体
+        <tr>    … 横 1 行（table row）
+        <th>    … 見出しのセル（自動で太字＆中央。table header）
+        <td>    … データのセル（table data）
+    -->
     <table>
       <tr>
         <th>名前</th>

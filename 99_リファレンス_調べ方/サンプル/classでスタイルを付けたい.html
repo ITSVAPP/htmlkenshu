@@ -2,9 +2,15 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>classでスタイルを付けたい</title>
     <style>
-      /* class を付けると、同じ見た目を何度でも使い回せます */
+      /*
+        class（クラス）は、見た目に付ける“名前のラベル”です。
+        ・CSS 側では「.名前 { ... }」と、先頭にドット(.)を付けて書きます。
+        ・HTML 側では、その名前を class="名前" と付けるだけ。
+        同じ class を何度でも使い回せるので、同じ見た目をまとめて作れます。
+      */
       .badge {
         display: inline-block;
         background-color: #2e7d32;
@@ -15,7 +21,7 @@
     </style>
   </head>
   <body>
-    <!-- HTML 側は class="badge" を付けるだけ -->
+    <!-- HTML 側は class="badge" を付けるだけ。3 つとも同じ見た目になります -->
     <span class="badge">新着</span>
     <span class="badge">おすすめ</span>
     <span class="badge">人気</span>

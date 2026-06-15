@@ -2,19 +2,23 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>マウスを乗せたら変化させたい</title>
     <style>
-      /* :hover でマウスを乗せたときの見た目を指定できます */
+      /*
+        「:hover」を付けたルールは、マウスを乗せている間だけ適用されます。
+        ふだんの見た目（.btn）と、乗せたときの見た目（.btn:hover）の 2 つを書くのがコツ。
+      */
       .btn {
         display: inline-block;
-        background-color: #1565c0;
+        background-color: #1565c0; /* ふだんの背景色 */
         color: #fff;
         padding: 8px 16px;
         border-radius: 4px;
-        transition: background-color 0.2s;
+        transition: background-color 0.2s; /* 色の変化を 0.2 秒かけてなめらかに */
       }
       .btn:hover {
-        background-color: #e2401b;
+        background-color: #e2401b; /* マウスを乗せている間の背景色 */
       }
     </style>
   </head>

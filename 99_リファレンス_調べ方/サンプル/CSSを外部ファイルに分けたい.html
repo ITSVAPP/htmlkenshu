@@ -2,8 +2,15 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSSを外部ファイルに分けたい</title>
-    <!-- CSS は別ファイルにして link で読み込むのがおすすめです -->
+
+    <!--
+      CSS が増えてきたら、別ファイル（.css）に分けて <link> で読み込むのが定番です。
+      ・href には CSS ファイルの場所を書きます（ここでは css フォルダの中の style.css）。
+      ・こうすると HTML はスッキリし、CSS は他のページでも使い回せます。
+      実際の見た目のルールは css/style.css の中を見てみましょう。
+    -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>

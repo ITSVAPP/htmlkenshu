@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>別の書体（Webフォント）を使いたい</title>
+
+    <!--
+      パソコンに入っていないオシャレな書体も、「Web フォント」を読み込めば使えます。
+      ここでは Google Fonts（無料）の例です。
+      手順:
+        1. https://fonts.google.com/ で好きなフォントを選ぶ
+        2. 表示された <link> をコピーして、下のように <head> に貼る
+        3. CSS の font-family にフォント名を書く
+      ※インターネットに接続していないと表示されません。
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .webfont {
+        /* ↓ 読み込んだフォント名を指定。万一読み込めなくても後ろの sans-serif で表示されます */
+        font-family: "Kosugi Maru", sans-serif;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>これは標準の書体です。</p>
+    <p class="webfont">これは Web フォント（Kosugi Maru）の書体です。</p>
+  </body>
+</html>

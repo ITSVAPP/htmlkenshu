@@ -2,10 +2,24 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>画像を表示したい</title>
   </head>
   <body>
-    <!-- 画像は img タグ。src に画像の場所、alt に画像の説明を書きます -->
+    <!--
+      画像は <img> で表示します（閉じタグは不要）。
+        src   … 画像ファイルの場所（パス）。ここを間違えると画像が出ません。
+        alt   … 画像の説明。表示できないときの代わりの文字＆読み上げにも使われます。
+        width … 横幅（px）。高さは自動でバランスよく合わせてくれます。
+    -->
     <img src="images/写真.jpg" alt="サンプル写真" width="300" />
+
+    <!--
+      【あるある】画像が出ない → だいたい src のパス間違いです。確認ポイント:
+        ・ファイル名・拡張子（.jpg / .png）は合っているか
+        ・大文字小文字は合っているか
+        ・HTML から見た場所は合っているか
+          （同じフォルダなら "写真.jpg"、images フォルダの中なら "images/写真.jpg"）
+    -->
   </body>
 </html>

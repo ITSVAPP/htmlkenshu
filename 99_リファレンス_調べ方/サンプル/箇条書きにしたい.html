@@ -2,22 +2,43 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>箇条書きにしたい</title>
+    <style>
+      /*
+        【応用】先頭の「・」や数字を消したいときは list-style: none; を使います。
+        メニューを横並びにするときなどによく使います。
+      */
+      .no-mark {
+        list-style: none; /* 先頭の「・」を消す */
+        padding-left: 0; /* 「・」のぶんの左の余白も消す */
+      }
+    </style>
   </head>
   <body>
-    <!-- 順番なしは ul、番号付きは ol。中の項目は li で書きます -->
-    <h2>順番なしの箇条書き（ul）</h2>
+    <!--
+      箇条書きは 2 種類。中の項目はどちらも <li>（list item）で書きます。
+      ・順番が関係ないもの → <ul>（先頭が「・」になる）
+      ・順番が大事なもの   → <ol>（先頭が「1. 2. 3.」と番号になる）
+    -->
+    <h3>順番なしの箇条書き（ul）</h3>
     <ul>
       <li>りんご</li>
       <li>みかん</li>
       <li>ぶどう</li>
     </ul>
 
-    <h2>番号付きの箇条書き（ol）</h2>
+    <h3>番号付きの箇条書き（ol）</h3>
     <ol>
       <li>準備する</li>
       <li>作る</li>
       <li>確認する</li>
     </ol>
+
+    <h3>先頭の「・」を消した例（list-style: none）</h3>
+    <ul class="no-mark">
+      <li>マークなしの項目 1</li>
+      <li>マークなしの項目 2</li>
+    </ul>
   </body>
 </html>

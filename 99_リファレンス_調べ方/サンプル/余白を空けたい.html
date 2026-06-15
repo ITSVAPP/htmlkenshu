@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>余白（すき間）を空けたい</title>
+    <style>
+      /*
+        余白には 2 種類あります。ここは初心者の最大のつまずきポイント！
+          margin  … 箱の「外側」のすき間（となりの要素との間隔）
+          padding … 箱の「内側」のすき間（枠と、中身の文字との間隔）
+
+        値は px で指定します。
+          margin: 20px;        → 上下左右すべてに 20px
+          margin: 10px 30px;   → 上下 10px・左右 30px（2 つ書くと縦・横で分けられる）
+      */
+      .box {
+        background-color: #ffd966;
+        border: 2px solid #e0a800; /* 余白の効きを分かりやすくするための枠線 */
+      }
+      .padding {
+        padding: 24px; /* 内側に余白 → 枠と文字の“間”が広がる */
+      }
+      .margin {
+        margin: 24px; /* 外側に余白 → 箱の“まわり”との間が広がる */
+      }
+    </style>
+  </head>
+  <body>
+    <p>① padding（内側の余白）あり：枠と文字の間が広がります</p>
+    <div class="box padding">padding: 24px;</div>
+
+    <p>② margin（外側の余白）あり：箱のまわりにすき間ができます</p>
+    <div class="box margin">margin: 24px;</div>
+
+    <p>③ 何も付けない箱（①②と比べてみよう）</p>
+    <div class="box">余白なし</div>
+  </body>
+</html>

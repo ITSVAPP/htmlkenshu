@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>影をつけたい</title>
+    <style>
+      /*
+        影は box-shadow。数字は「右へ 下へ ぼかし 色」の順です。
+          例) box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+              ・0    … 右方向のずれ（0 なら横にずらさない）
+              ・4px  … 下方向のずれ
+              ・12px … 影のぼかし（大きいほどふんわり）
+              ・rgba(0,0,0,0.2) … 影の色。最後の 0.2 は濃さ（0〜1、小さいほど薄い）
+        カード（箱）を“浮いて”見せたいときの定番です。
+      */
+      .card {
+        width: 200px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* ふんわりした影 */
+        margin: 20px; /* まわりに余白（影が見えるように） */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">影をつけると、箱が少し浮いて見えます。</div>
+  </body>
+</html>

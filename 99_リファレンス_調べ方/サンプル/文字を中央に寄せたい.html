@@ -2,20 +2,26 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>文字を中央に寄せたい</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字を中央／右に寄せたい</title>
     <style>
-      /* 中央寄せは text-align: center;（昔の center タグや align 属性は使いません） */
+      /*
+        文字（テキスト）の左右の寄せは text-align で指定します。
+        ・center＝中央、right＝右、left＝左（指定しないと左寄せ）。
+        ※これは「文字」を寄せる指定です。
+          箱（ボックス）ごと中央に置きたいときは「要素を中央に配置したい.html」を見てください。
+      */
       .center {
-        text-align: center;
+        text-align: center; /* 中央寄せ */
       }
       .right {
-        text-align: right;
+        text-align: right; /* 右寄せ */
       }
     </style>
   </head>
   <body>
     <p class="center">中央寄せのテキスト</p>
     <p class="right">右寄せのテキスト</p>
-    <p>指定なしは左寄せ（標準）です。</p>
+    <p>指定しないと左寄せ（標準）です。</p>
   </body>
 </html>
