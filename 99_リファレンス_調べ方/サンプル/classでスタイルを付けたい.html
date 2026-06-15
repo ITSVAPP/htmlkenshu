@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>classでスタイルを付けたい</title>
+    <style>
+      /* class を付けると、同じ見た目を何度でも使い回せます */
+      .badge {
+        display: inline-block;
+        background-color: #2e7d32;
+        color: #fff;
+        padding: 2px 10px;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML 側は class="badge" を付けるだけ -->
+    <span class="badge">新着</span>
+    <span class="badge">おすすめ</span>
+    <span class="badge">人気</span>
+  </body>
+</html>

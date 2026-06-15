@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>要素を横に並べたい</title>
+    <style>
+      /* display: flex; を付けると、中の要素が横に並びます。gap は間隔です */
+      .row {
+        display: flex;
+        gap: 12px;
+      }
+      .card {
+        background-color: #f0f0f0;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="card">ボックス1</div>
+      <div class="card">ボックス2</div>
+      <div class="card">ボックス3</div>
+    </div>
+  </body>
+</html>
