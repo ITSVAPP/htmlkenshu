@@ -31,7 +31,7 @@ git clone https://github.com/ITSVAPP/htmlkenshu.git
 ```
 
 - 解答を見たいとき: `git checkout answer` ／ 戻すとき: `git checkout main`
-- まずは各課題の README にある「考え方・ヒント」を読み、自分で取り組んでから解答を確認しましょう。
+- まずは各課題の説明（目標・学習事項）を読み、自分で取り組んでから解答を確認しましょう。
 
 ## おすすめ教材
 
