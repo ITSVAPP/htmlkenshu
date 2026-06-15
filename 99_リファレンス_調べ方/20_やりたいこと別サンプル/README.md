@@ -79,5 +79,8 @@
 | フリーのイラストを使いたい | [いらすとや](https://www.irasutoya.com/) |
 | 配色（色の組み合わせ）に迷う | [Coolors（配色ツール）](https://coolors.co/) ・ [Adobe Color](https://color.adobe.com/ja/create/color-wheel) |
 | アイコンを使いたい | [Google Fonts Icons](https://fonts.google.com/icons) |
+| 画像にぼかし・明るさなどの効果をかけたい | [JustCode Filters](https://justcode.today/filters/) … ぼかし・明るさ・モノクロなどの効果(CSS filter)を試してコードをコピー |
+| 要素に動き（アニメーション）を付けたい | [Animista](https://animista.net/) … 用意された CSS アニメを選んで調整し、コードをコピー |
+| コピペで切り替えの演出を足したい | [Transition.css](https://www.transition.style/) … コピペで使えるアニメーション（切り替え演出）集 |
 
 > ここに無いものは [30_調べ方とAIプロンプト](../30_調べ方とAIプロンプト/) を参考に、自分で調べてみましょう。
